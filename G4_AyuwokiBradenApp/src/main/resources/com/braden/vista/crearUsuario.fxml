@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.braden.vista.CrearUsuario">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="1155.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/Ventanas/crear_paciente.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="445.0" fitWidth="425.0" layoutX="684.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/Recurso%203.png" />
+         </image>
+      </ImageView>
+      <Text fill="#468faf" layoutX="241.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fill="#468faf" layoutX="229.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Button fx:id="botonCrearUsuario" layoutX="227.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#alPulsarCrearUsuario" prefHeight="30.0" prefWidth="399.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="Crear usuario">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="textFieldNombre" layoutX="329.0" layoutY="271.0" prefHeight="30.0" prefWidth="254.0" promptText="Ej: Pau" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldApellido1" layoutX="329.0" layoutY="311.0" prefHeight="30.0" prefWidth="254.0" promptText="Ej: Fandos" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldApellido2" layoutX="329.0" layoutY="350.0" prefHeight="30.0" prefWidth="254.0" promptText="Ej: Rico" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldCorreo" layoutX="329.0" layoutY="391.0" prefHeight="30.0" prefWidth="254.0" promptText="Ej: pau@gmail.com" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Text fill="#468faf" layoutX="236.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fill="#468faf" layoutX="236.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fill="#468faf" layoutX="246.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <ImageView fitHeight="64.0" fitWidth="550.0" layoutX="186.0" layoutY="192.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Imagenes/dialogo5_1.png" />
+         </image>
+      </ImageView>
+      <Text fill="#468faf" layoutX="199.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para crear un usuario debes rellenar los campos obligatorios." wrappingWidth="523.0014343261719">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <PasswordField fx:id="textFieldContrasenya" layoutX="329.0" layoutY="433.0" prefHeight="30.0" prefWidth="254.0" promptText="Mínimo 6 carácteres" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <Button id="botones1" layoutX="48.0" layoutY="573.0" mnemonicParsing="false" onMouseClicked="#alPulsarVolver" prefHeight="50.0" prefWidth="56.0" styleClass="botones1" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fx:id="bVolver" fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/atras_Blanco.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="19.0" fitWidth="37.0" layoutX="597.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/medico.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="37.0" layoutX="597.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/medico.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="37.0" layoutX="597.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/medico.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="37.0" layoutX="597.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/medico.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.braden.vista.RealizarTest">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="1155.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/Ventanas/test.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelPaciente" layoutX="642.0" layoutY="165.0" prefHeight="27.0" prefWidth="201.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEdadPaciente" layoutX="892.0" layoutY="170.0" prefHeight="18.0" prefWidth="70.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUsuario" layoutX="376.0" layoutY="164.0" prefHeight="30.0" prefWidth="171.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonAtras" layoutX="580.0" layoutY="596.0" mnemonicParsing="false" onMouseClicked="#preguntaAnterior" prefHeight="30.0" prefWidth="130.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="  &lt;&lt;  ATRÁS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <GridPane fx:id="gridPaneImagenes" layoutX="335.0" layoutY="255.0" prefHeight="218.0" prefWidth="754.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="img_respuesta1" fitHeight="210.0" fitWidth="170.0" onMouseClicked="#alSeleccionarImagen" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="img_respuesta2" fitHeight="210.0" fitWidth="170.0" onMouseClicked="#alSeleccionarImagen" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="img_respuesta3" fitHeight="210.0" fitWidth="170.0" onMouseClicked="#alSeleccionarImagen" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="img_respuesta4" fitHeight="210.0" fitWidth="170.0" onMouseClicked="#alSeleccionarImagen" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </GridPane>
+      <Button fx:id="botonSiguiente" layoutX="723.0" layoutY="596.0" mnemonicParsing="false" onMouseClicked="#preguntaSiguiente" prefHeight="30.0" prefWidth="130.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="SIGUIENTE  &gt;&gt;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <GridPane layoutX="312.0" layoutY="510.0" prefHeight="40.0" prefWidth="833.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="58.13330078125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="78.00000610351563" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="65.19999389648439" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="76.80001220703124" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.333349609375" minWidth="10.0" prefWidth="62.39998779296877" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.7333984375" minWidth="10.0" prefWidth="72.99995117187501" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="68.60001220703123" minWidth="10.0" prefWidth="66.79997558593749" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.13336181640625" minWidth="10.0" prefWidth="83.60002441406249" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="77.19998779296873" minWidth="10.0" prefWidth="60.600048828124955" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.79998779296875" minWidth="10.0" prefWidth="79.20000000000005" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.20003662109377" minWidth="10.0" prefWidth="54.39990234375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="48.46665039062498" minWidth="2.39996337890625" prefWidth="2.4000976562499545" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.3333740234375" minWidth="10.0" prefWidth="79.7333984375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="res_pregunta1" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" translateX="2.0" translateY="3.0" />
+            <Label fx:id="labelRespuesta1" prefHeight="30.0" prefWidth="54.0" textFill="WHITE" translateX="-14.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelRespuesta6" layoutX="21.0" prefHeight="18.0" prefWidth="46.0" textFill="WHITE" translateX="-8.0" GridPane.columnIndex="12">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelRespuesta5" prefHeight="18.0" prefWidth="57.0" textFill="WHITE" translateX="-13.0" GridPane.columnIndex="9">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelRespuesta4" prefHeight="18.0" prefWidth="57.0" textFill="WHITE" translateX="-14.0" GridPane.columnIndex="7">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelRespuesta3" prefHeight="18.0" prefWidth="59.0" textFill="WHITE" translateX="-15.0" GridPane.columnIndex="5">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelRespuesta2" prefWidth="59.0" textFill="WHITE" translateX="-15.0" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="res_pregunta2" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" translateX="7.0" translateY="1.0" GridPane.columnIndex="2" />
+            <ImageView fx:id="res_pregunta3" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" translateX="7.0" translateY="2.0" GridPane.columnIndex="4" />
+            <ImageView fx:id="res_pregunta4" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" translateX="13.0" translateY="2.0" GridPane.columnIndex="6" />
+            <ImageView fx:id="res_pregunta5" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" translateX="5.0" translateY="2.0" GridPane.columnIndex="8" />
+            <ImageView fx:id="res_pregunta6" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" translateX="6.0" translateY="1.0" GridPane.columnIndex="10" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </GridPane>
+      <Button fx:id="botonMenu" layoutX="356.0" layoutY="596.0" mnemonicParsing="false" onMouseClicked="#menuPrincipal" prefHeight="30.0" prefWidth="190.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="MENÚ PRINCIPAL">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0">
+               <image>
+                  <Image url="@../../../Imagenes/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextArea fx:id="textAreaInfo" editable="false" layoutX="340.0" layoutY="263.0" prefHeight="207.0" prefWidth="747.0" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="img_respuesta5" fitHeight="210.0" fitWidth="382.0" layoutX="705.0" layoutY="266.0" onMouseClicked="#alSeleccionarImagen" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <Button fx:id="botonEnviarTest" layoutX="891.0" layoutY="596.0" mnemonicParsing="false" onMouseClicked="#alPulsarEnviarTest" prefHeight="30.0" prefWidth="190.0" styleClass="botones1" stylesheets="@../../../estilos.css" text=" ENVIAR TEST">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@../../../Imagenes/enviar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="306.0" layoutY="164.0" prefHeight="30.0" prefWidth="98.0" text="USUARIO:" textFill="#8af1ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="565.0" layoutY="165.0" prefHeight="27.0" prefWidth="76.0" text="PACIENTE: " textFill="#8af1ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="842.0" layoutY="165.0" prefHeight="27.0" prefWidth="50.0" text="EDAD:" textFill="#8af1ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelResultadoSuma" alignment="CENTER" contentDisplay="CENTER" layoutX="1008.0" layoutY="187.0" prefHeight="56.0" prefWidth="74.0" textFill="#f9b233" translateX="-10.0" wrapText="true" AnchorPane.leftAnchor="1008.0" AnchorPane.rightAnchor="68.0">
+         <font>
+            <Font name="Verdana Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="236.0" fitWidth="231.0" layoutX="-2.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/monigote.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="188.0" layoutX="94.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/dialogo6.png" />
+         </image>
+      </ImageView>
+      <Text fill="#468faf" layoutX="107.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para acceder a las respuestas, no olvide hacer click en la imagen superior." textAlignment="CENTER" wrappingWidth="170.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f6fcff" layoutX="28.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PREGUNTA">
+         <font>
+            <Font name="Verdana Bold" size="36.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="190.0" layoutX="44.0" layoutY="210.0" stroke="#ffffff00" strokeType="OUTSIDE" strokeWidth="5.0" width="195.0" />
+      <ImageView fx:id="img_pregunta1" fitHeight="175.0" fitWidth="180.0" layoutX="53.0" layoutY="217.0" onMouseClicked="#alSeleccionarImagen" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+   </children>
+</AnchorPane>

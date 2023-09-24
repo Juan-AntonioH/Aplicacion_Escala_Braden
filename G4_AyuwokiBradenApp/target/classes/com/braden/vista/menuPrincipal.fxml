@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1150.0" stylesheets="@../../../estilos.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.braden.vista.MenuPrincipal">
+   <children>
+      <Pane prefHeight="650.0" prefWidth="1150.0">
+         <children>
+            <ImageView fitHeight="670.0" fitWidth="1155.0" layoutX="-5.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/Ventanas/fondo_menuPrincipal.png" />
+               </image>
+            </ImageView>
+            <ImageView id="menuPrincipal_opciones" fitHeight="310.0" fitWidth="235.0" layoutX="330.0" layoutY="240.0" onMouseClicked="#alPulsarImagenPaciente" pickOnBounds="true" preserveRatio="true" styleClass="menuPrincipal_opciones">
+               <image>
+                  <Image url="@../../../Imagenes/menu2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView id="menuPrincipal_opciones" fx:id="realizarTest" fitHeight="310.0" fitWidth="235.0" layoutX="592.0" layoutY="240.0" onMouseClicked="#alPulsarTest" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/menu1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView id="menuPrincipal_opciones" fx:id="verHistorial" fitHeight="310.0" fitWidth="235.0" layoutX="853.0" layoutY="240.0" onMouseClicked="#alPulsarHistorial" pickOnBounds="true" preserveRatio="true" styleClass="menuPrincipal_opciones">
+               <image>
+                  <Image url="@../../../Imagenes/menuprincipal_verhistorial3.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Button fx:id="bInfo" layoutX="710.0" layoutY="590.0" mnemonicParsing="false" onMouseClicked="#verInfo" prefHeight="30.0" prefWidth="404.0" styleClass="botones1" stylesheets="@../../../estilos.css" text=" INFO">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="79.0" fitWidth="20.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/info_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bSalir" layoutX="306.0" layoutY="590.0" mnemonicParsing="false" onMouseClicked="#volverALogin" prefHeight="30.0" prefWidth="385.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="  SALIR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="24.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="#8af1ff" layoutX="306.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USUARIO:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#8af1ff" layoutX="691.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PACIENTE:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="labelNombreUsuario" layoutX="410.0" layoutY="165.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelNombrePaciente" layoutX="794.0" layoutY="164.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="349.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ELEGIR PACIENTE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="txt_test" fill="#165b64" layoutX="621.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REALIZAR TEST">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="txt_historial" fill="WHITE" layoutX="884.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VER HISTORIAL">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <ImageView fitHeight="176.0" fitWidth="193.0" layoutX="34.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/Recurso%208.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="286.0" fitWidth="200.0" layoutX="30.0" layoutY="173.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Imagenes/dialogo7.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="textInfoNoPaciente" fill="#023348ba" layoutX="50.0" layoutY="207.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texto" text="Antes de poder realizar el test o comprobar el historial, se debe seleccionar un paciente del usuario encargado." textAlignment="CENTER" wrappingWidth="162.87344360351562">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="textInfoNoPaciente1" fill="#023348ba" layoutX="57.0" layoutY="305.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texto" text="A continuación, podrá realizar el test y/o ver el historial de su paciente." textAlignment="CENTER" wrappingWidth="150.87344360351562">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="textInfoNoPaciente11" fill="#023348ba" layoutX="57.0" layoutY="385.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texto" text="¡Y no olvide consultar con su médico los resultados!" textAlignment="CENTER" wrappingWidth="150.87344360351562">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

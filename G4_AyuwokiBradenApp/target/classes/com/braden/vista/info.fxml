@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="650.0" prefWidth="1150.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.braden.vista.Informacion">
+    <children>
+      <Pane prefHeight="650.0" prefWidth="1150.0">
+         <children>
+            <ImageView fitHeight="665.0" fitWidth="1160.0" layoutX="-22.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/Ventanas/informacion.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="406.0" fitWidth="286.0" layoutX="81.0" layoutY="153.0" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/escala-de-braden_mesa-de-trabajo-1.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="461.0" layoutY="531.0" mnemonicParsing="false" onAction="#volvermenu" prefHeight="30.0" prefWidth="557.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="     VOLVER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imagenes/atras_Blanco.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Hyperlink layoutX="176.0" layoutY="565.0" onMouseClicked="#linkAbrirNavegador" text="Enlace de interés" textFill="#134b53" />
+            <ScrollPane layoutX="447.0" layoutY="196.0" pannable="true" prefHeight="313.0" prefWidth="585.0" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="329.0" prefWidth="562.0" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+                     <children>
+                        <Label layoutX="16.0" layoutY="95.0" prefHeight="104.0" prefWidth="530.0" stylesheets="@../../../estilos.css" text="Las úlceras Las UPP  provocan un gran deterioro en el nivel de la salud y calidad de vida, presentan una gran prevalencia e incidencia (sobre todo en las personas de avanzada edad), y en la mayoría de los casos no se tiene la suficiente información o se está en desconocimiento lo que supone otra dificultad añadida." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="1.0" prefHeight="102.0" prefWidth="530.0" stylesheets="@../../../estilos.css" text="Las úlceras por presión UPP son lesiones que se producen en la piel, como consecuenciade la presión o roce constante, llegando en ocasiones hasta articulaciones y huesos." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="205.0" prefHeight="159.0" prefWidth="530.0" stylesheets="@../../../estilos.css" text="Podemos dividir los factores que influyen en la aparición de UPP en dos: Factores internos, como la Edad, Alteraciones nutricionales, Alteración de la sensibilidad (no percepción del dolor), Alteración del estado mental o nivel de conciencia o alteración inmunológica, Factores externos, como la Inmovilidad física, Humedad (incontinencia, sudoración, drenajes, exudado de heridas...), y por último, Factores mecánicos y/o fricción. Su aparición es frecuente en lugares donde encontramos prominencias óseas como lasorejas, los hombros, omóplatos, codos, costillas, caderas, sacro, rodillas, talones, tobillos..." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Text id="titulo" fill="#134b53" layoutX="501.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué son las úlceras por presión? ">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

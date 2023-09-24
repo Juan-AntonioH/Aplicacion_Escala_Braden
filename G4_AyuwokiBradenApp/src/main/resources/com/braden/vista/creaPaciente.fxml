@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.braden.vista.CrearPaciente">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="1155.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/Ventanas/crear_paciente.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="217.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="139.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de nacimiento">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Button fx:id="bCrearPaciente" layoutX="291.0" layoutY="397.0" mnemonicParsing="false" onAction="#crearPaciente" prefHeight="40.0" prefWidth="322.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="Crear paciente">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="textFieldNomPaciente" layoutX="288.0" layoutY="275.0" prefHeight="30.0" prefWidth="318.0" promptText="Ej: Adrián Muñoz" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <DatePicker fx:id="dataPickerFechaNacimiento" editable="false" layoutX="288.0" layoutY="336.0" onAction="#verfecha" prefHeight="30.0" prefWidth="321.0" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css" />
+      <ImageView fitHeight="353.0" fitWidth="343.0" layoutX="726.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/recurso8.png" />
+         </image>
+      </ImageView>
+      <Button id="botones1" layoutX="48.0" layoutY="558.0" mnemonicParsing="false" onAction="#alPulsarVolver" prefHeight="50.0" prefWidth="56.0" styleClass="botones1" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/atras_Blanco.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

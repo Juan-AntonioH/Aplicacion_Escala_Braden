@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.braden.vista.Login">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="1155.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/Ventanas/login_usuario.png" />
+         </image>
+      </ImageView>
+      <Text fill="#478fad" layoutX="581.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fill="#468faf" layoutX="570.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Button fx:id="botonAcceder" layoutX="574.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#alPulsarAcceder" prefHeight="30.0" prefWidth="440.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="Acceder">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField id="fondoRecuadro" fx:id="textFieldUsuario" layoutX="670.0" layoutY="293.0" prefHeight="30.0" prefWidth="340.0" promptText="pau@gmail.com" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <PasswordField id="fondoRecuadro" fx:id="textFieldContrasenya" layoutX="670.0" layoutY="340.0" prefHeight="30.0" prefWidth="340.0" promptText="password" styleClass="fondoRecuadro" stylesheets="@../../../estilos.css">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <Button fx:id="botonCrearUsuario" layoutX="574.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#alPulsarCrearUsuario" prefHeight="30.0" prefWidth="440.0" styleClass="botones1" stylesheets="@../../../estilos.css" text="  Crear Usuario">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="68.0" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imagenes/doctor.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="382.0" fitWidth="382.0" layoutX="79.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/login.png" />
+         </image>
+      </ImageView>
+      <Text fill="#468faf" layoutX="252.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dime quién eres.">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#468faf" layoutX="254.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hola! Por favor,">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="1029.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imagenVerificarUsuario" fitHeight="30.0" fitWidth="37.0" layoutX="1034.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imagenVerificarPassw" fitHeight="30.0" fitWidth="37.0" layoutX="1034.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

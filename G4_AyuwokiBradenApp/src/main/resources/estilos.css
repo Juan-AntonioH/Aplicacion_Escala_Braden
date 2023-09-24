@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 may 2022, 17:29:49
+    Author     : Juan
+*/
+/*@font-face {
+    -fx-font-family: Roboto;
+    src: url('/font/Roboto-Regular.ttf');
+}
+
+* {
+    -fx-font-family: "Roboto" ;
+    -fx-text-fill: #468faf;
+}*/
+
+.titulo {
+    -fx-text-fill: #134b53;
+    
+}
+.texto {
+    font-family: 'RobotoCondensed'
+    
+}
+
+.botones1{
+    -fx-background-color:#165B64;
+    -fx-text-fill: white;
+    /*-fx-effect: dropshadow(one-pass-box, black, 1, 0.0 ,2,1)*/
+}
+
+.botones1:hover{
+    /*-fx-background-color:#0096c7;   07393E*/
+    -fx-background-color:#468faf; 
+    -fx-fill-text: yellow;
+    /*-fx-effect: dropshadow(one-pass-box, black, 1, 0.0 ,2,1)*/
+}
+
+.botones1:pressed{
+    -fx-background-color:#ffb703;
+    -fx-text-fill: black;
+    /*-fx-effect: dropshadow(one-pass-box, black, 1, 0.0 ,2,1)*/
+}
+
+.botones1:active{
+    -fx-text-fill: white;
+}
+
+
+/*.menuPrincipal_opciones{
+    -fx-border: 26px solid black;
+    
+}*/
+
+.fondoRecuadro{
+     -fx-control-inner-background: #f3ffff;
+}
